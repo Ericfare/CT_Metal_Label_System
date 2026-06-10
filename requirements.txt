@@ -1,0 +1,4 @@
+numpy>=1.21
+SimpleITK>=2.2
+PySide6>=6.5
+vtk>=9.2
