@@ -2,7 +2,7 @@
 
 基于 **SimpleITK**、**PySide6** 与 **VTK** 的脑部 CT 金属伪影半自动标注工具。支持 DICOM / NIfTI / MHD 等多种格式加载，按 HU 阈值与形态学规则生成伪影掩码，并在轴位、冠状、矢状三平面及 3D 体渲染中同步预览标注效果。
 
-![界面示意](样例.png)
+![界面示意](presentation.png)
 
 ## 功能概览
 
@@ -24,6 +24,7 @@ SimplelTK/
 ├── vtk_volume_viewer.py     # VTK 3D 体绘制与表面重建
 ├── 标注方法.md               # HU 阈值与视觉标注规则
 ├── SimpleITK滤波金属伪影掩码滤波器介绍.md  # 滤波步骤说明
+├── presentation.png         # 界面截图
 ├── requirements.txt
 └── README.md
 ```
@@ -76,12 +77,6 @@ python CT_label_GUI.py
 | 最小连通域 | 30 | 剔除过小噪点 |
 
 更完整的判定标准与实操准则请参阅 [标注方法.md](标注方法.md)；各滤波步骤原理见 [SimpleITK滤波金属伪影掩码滤波器介绍.md](SimpleITK滤波金属伪影掩码滤波器介绍.md)。
-
-## 界面预览
-
-| 三平面 + 3D 体渲染 | 掩码叠加效果 |
-|:---:|:---:|
-| ![样例2](样例2.png) | ![样例3](样例3.png) |
 
 ## 注意事项
 
